@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ALivO</string>
+    <string name="name">Nom d\'utilisateur</string>
+    <string name="num">Numéro de téléphone</string>
+    <string name="sign">S\'INSCRIRE</string>
+    <string name="banner_alt">ALivO</string>
+    <string name="conditions">Nous vérifirons que votre numéro est valide. \nEn utilisant
+        cette application, vous acceptez \n les <a href="http://www.ardims.org">règles de confidentialité</a> de AlivO</string>
+    <string name="sign_up_login">Déjà membre? Se connecter</string>
+</resources>

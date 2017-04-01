@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:weightSum="1">
+
+    <ScrollView
+        android:id="@+id/sign_up_scrool"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/sign_up_linearlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <ImageView
+                android:id="@+id/sign_up_image"
+                android:layout_width="149dp"
+                android:layout_height="73dp"
+                android:layout_marginTop="30dp"
+                android:contentDescription="@string/banner_alt"
+                android:src="@drawable/ic_user"
+                android:adjustViewBounds="true"
+                android:gravity="center"
+                android:layout_weight="0.04" />
+
+            <!--Nom d'utilisateur-->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <EditText
+                    android:id="@+id/sign_up_nom_utilisateur"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:digits="0123456789qwertzuiopasdfghjklyxcvbnmQWERTZUIOPASDFGHJKLYXCVBNM"
+                    android:textColor="@color/primary_text_color"
+                    android:hint="@string/name"
+                    android:textSize="20dp"
+                    android:maxLines="1"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <!--Numéro de téléphone-->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <EditText
+                    android:id="@+id/sign_up_numero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textColor="@color/primary_text_color"
+                    android:hint="@string/num"
+                    android:textSize="20dp"
+                    android:maxLength="13"
+                    android:maxLines="1"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:text="@string/conditions"
+                android:gravity="center"
+                android:autoLink="web"
+                android:linksClickable="true"/>
+
+            <!--Bouton de création de compte utilisateur-->
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/sign_up_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:padding="15dp"
+                android:text="@string/sign"
+                android:textSize="20dp"/>
+
+            <TextView android:id="@+id/sign_up_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="@string/sign_up_login"
+                android:gravity="center"
+                android:textSize="16dip"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
